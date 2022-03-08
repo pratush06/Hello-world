@@ -1,0 +1,115 @@
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' 
+xmlns:bsvc='urn:com.workday/bsvc'>
+<soapenv:Header/>
+<soapenv:Body>
+<bsvc:Create_Requisition_Request bsvc:version='v36.1' xmlns:bsvc='urn:com.workday/bsvc'>
+			<bsvc:Create_Job_Requisition_Data>
+				<bsvc:Supervisory_Organization_Reference>
+					<bsvc:ID bsvc:type='wid'>1f8ff0a1f91410f6ca2ff325183d0a09</bsvc:ID>
+				</bsvc:Supervisory_Organization_Reference>
+				<bsvc:Create_Job_Requisition_Reason_Reference>
+					<bsvc:ID bsvc:type='Event_Classification_Subcategory_ID'>New_Role_New_Headcount_Non-Reimbursable</bsvc:ID>
+				</bsvc:Create_Job_Requisition_Reason_Reference>
+				<bsvc:Job_Requisition_Data>
+					<bsvc:Job_Posting_Title>Posting title</bsvc:Job_Posting_Title>
+					<bsvc:Job_Description_Summary>Title</bsvc:Job_Description_Summary>
+					<bsvc:Justification>Title</bsvc:Justification>
+					<bsvc:Recruiting_Start_Date>2022-03-04</bsvc:Recruiting_Start_Date>
+					<bsvc:Target_Hire_Date>2022-03-04</bsvc:Target_Hire_Date>
+					<bsvc:Job_Profile_Reference>
+						<bsvc:ID bsvc:type='wid'>0094a019bb0e100f4d0c12e7472707b8</bsvc:ID>
+					</bsvc:Job_Profile_Reference>
+					<bsvc:Worker_Type_Reference>
+						<bsvc:ID bsvc:type='Worker_Type_ID'>EE</bsvc:ID>
+					</bsvc:Worker_Type_Reference>
+					<bsvc:Worker_Sub-Type_Reference>
+						<bsvc:ID bsvc:type='Employee_Type_ID'>Regular</bsvc:ID>
+					</bsvc:Worker_Sub-Type_Reference>
+					<bsvc:Recruiting_Instruction_Reference>
+						<bsvc:ID bsvc:type='Recruiting_Instruction_ID'>Post_Internally_Only</bsvc:ID>
+					</bsvc:Recruiting_Instruction_Reference>
+						<bsvc:Primary_Location_Reference>
+							<bsvc:ID bsvc:type='wid'>f5799b99ca2246d9bcf405fbc0a96b1d</bsvc:ID>
+						</bsvc:Primary_Location_Reference>
+						<bsvc:Primary_Job_Posting_Location_Reference>
+							<bsvc:ID bsvc:type='wid'>f5799b99ca2246d9bcf405fbc0a96b1d</bsvc:ID>
+						</bsvc:Primary_Job_Posting_Location_Reference>
+						<bsvc:Position_Time_Type_Reference>
+							<bsvc:ID bsvc:type='Position_Time_Type_ID'>Full_time</bsvc:ID>
+						</bsvc:Position_Time_Type_Reference>
+						<bsvc:Scheduled_Weekly_Hours>40</bsvc:Scheduled_Weekly_Hours>
+						<bsvc:Organization_Data>
+							<bsvc:Organization_Assignments_for_Job_Requisition_Data>
+								<bsvc:Company_Assignment_Reference>
+									<bsvc:ID bsvc:type='wid'>cb550da820584750aae8f807882fa79a</bsvc:ID>
+								</bsvc:Company_Assignment_Reference>
+								<bsvc:Cost_Center_Assignment_Reference>
+									<bsvc:ID bsvc:type='wid'>2530ffd77ab01012e9407167d1f33105</bsvc:ID>
+								</bsvc:Cost_Center_Assignment_Reference>
+								<bsvc:Region_Assignment_Reference>
+									<bsvc:ID bsvc:type='wid'>2a99f6b9d77e45d6ba6061cde1575384</bsvc:ID>
+								</bsvc:Region_Assignment_Reference>
+								<bsvc:Custom_Organization_Assignment_Reference>
+								<bsvc:ID bsvc:type='Organization_Reference_ID'>5012_-_0000_Producer_Support</bsvc:ID>
+								</bsvc:Custom_Organization_Assignment_Reference>
+							</bsvc:Organization_Assignments_for_Job_Requisition_Data>
+						</bsvc:Organization_Data>
+					</bsvc:Job_Requisition_Data>
+					<bsvc:Request_Requisition_Compensation_Sub_Process>
+						<bsvc:Requisition_Compensation_Data>
+							<bsvc:Primary_Compensation_Basis>100000</bsvc:Primary_Compensation_Basis>
+							<bsvc:Allowance_Plan_Non-Unit_Based_Data>
+								<bsvc:Allowance_Plan_Sub_Data>
+									<bsvc:Allowance_Plan_Reference>
+										<bsvc:ID bsvc:type='Compensation_Plan_ID'>
+                                        Allowance_Amount_Plan_Allowance_Car
+                                        </bsvc:ID>
+									</bsvc:Allowance_Plan_Reference>
+									<bsvc:Amount>1000</bsvc:Amount>
+									<bsvc:Currency_Reference>
+										<bsvc:ID bsvc:type='Currency_ID'>USD</bsvc:ID>
+									</bsvc:Currency_Reference>
+									<bsvc:Frequency_Reference>
+										<bsvc:ID bsvc:type='Frequency_ID'>Monthly</bsvc:ID>
+									</bsvc:Frequency_Reference>
+								</bsvc:Allowance_Plan_Sub_Data>
+							</bsvc:Allowance_Plan_Non-Unit_Based_Data>
+							<bsvc:Bonus_Plan_Data bsvc:Replace='false'>
+								<bsvc:Bonus_Plan_Sub_Data>
+									<bsvc:Bonus_Plan_Reference>
+										<bsvc:ID bsvc:type='Compensation_Plan_ID'>
+                                        Bonus_Percent_Plan_Bonus_Team_Member</bsvc:ID>
+									</bsvc:Bonus_Plan_Reference>
+									<bsvc:Individual_Target_Percent>10</bsvc:Individual_Target_Percent>
+								</bsvc:Bonus_Plan_Sub_Data>
+							</bsvc:Bonus_Plan_Data>
+							<bsvc:Merit_Plan_Data bsvc:Replace='true'>
+								<bsvc:Merit_Plan_Sub_Data>
+									<bsvc:Merit_Plan_Reference>
+										<bsvc:ID bsvc:type='Compensation_Plan_ID'>
+                                        Merit_Percent_Plan_Merit_Salaried
+                                        </bsvc:ID>
+									</bsvc:Merit_Plan_Reference>
+								</bsvc:Merit_Plan_Sub_Data>
+							</bsvc:Merit_Plan_Data>
+							<bsvc:Commission_Plan_Data>
+								<bsvc:Commission_Plan_Sub_Data>
+									<bsvc:Commission_Plan_Reference>
+										<bsvc:ID bsvc:type='Compensation_Plan_ID'>
+                                        Commission_Plan_Commission_Field_Sales</bsvc:ID>
+									</bsvc:Commission_Plan_Reference>
+									<bsvc:Target_Amount>0</bsvc:Target_Amount>
+									<bsvc:Currency_Reference>
+										<bsvc:ID bsvc:type='Currency_ID'>USD</bsvc:ID>
+									</bsvc:Currency_Reference>
+									<bsvc:Frequency_Reference>
+										<bsvc:ID bsvc:type='Frequency_ID'>Annual</bsvc:ID>
+									</bsvc:Frequency_Reference>
+								</bsvc:Commission_Plan_Sub_Data>
+							</bsvc:Commission_Plan_Data>
+					</bsvc:Requisition_Compensation_Data>
+				</bsvc:Request_Requisition_Compensation_Sub_Process>
+			</bsvc:Create_Job_Requisition_Data>
+		</bsvc:Create_Requisition_Request>
+    </soapenv:Body>
+</soapenv:Envelope>
